@@ -12,7 +12,7 @@ class Application
     else
       resp.write("Good Moring!")
     end
-      
+
     resp.finish
   end
 end
