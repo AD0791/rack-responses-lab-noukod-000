@@ -5,7 +5,14 @@ class Application
     time =  Kernel.rand(1..24)
     resp.write("The current time is: #{time}")
 
-
+    if time.between?(12,18)
+      resp.write("Good Afternoon!")
+    elsif time.between?(19,24)
+      resp.write("Good Night")
+    else
+      resp.write("Good Moring!")
+    end
+      
     resp.finish
   end
 end
